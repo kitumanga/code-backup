@@ -1,0 +1,70 @@
+// Breakpoint
+$xsmall: 480px !default;
+$largeMobile: 576px !default;
+$small: 767px !default;
+$medium: 768px !default;
+$xmedium: 992px !default;
+$large: 1200px !default;
+$xlarge: 1440px !default;
+$xxlarge: 1600px !default;
+$xxxlarge: 1920px !default;
+
+// Spacing
+$spacing-base: 15px;
+$spacing-double: $spacing-base * 2;
+$spacing-triple: $spacing-base * 3;
+$spacing-four: $spacing-base * 4;
+$spacing-half: $spacing-base/2;
+$spacing-quarter: $spacing-half/2;
+
+// Container
+$container: 1630px !default;
+$container-md: 1530px !default;
+$container-lg: 1610px !default;
+
+// Width
+$width-full: 100% !default;
+$width-half: $width-full / 2 !default;
+$width-25: $width-full / 4 !default;
+$width-75: $width-full - $width-25 !default;
+$full-height: $width-full;
+
+// Font Family
+$font-family-body: "Minion Pro";
+$font-family-opens: 'Open Sans Condensed', sans-serif;
+
+// Typography
+$font-size-body: 17px !default;
+$font-size-h1: 80px !default;
+$font-size-h2: 72px !default;
+$font-size-h3: 40px !default;
+$font-size-h4: 30px !default;
+$font-size-h5: 28px !default;
+$font-size-h6: 20px !default;
+$font-size-xsm: 12px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
+
+// Font Weight
+$xlight: 100;
+$light: 200;
+$thin: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+$xbold: 900;
+
+//Font Style
+$italic: italic;
+$normal: normal;
+
+// Colors
+$color-black: #000000;
+$color-white: #fff;
+$color-lightwhite : rgba(255,255,255,.35);
+$color-blue: #0af7ff;
+$color-gray: #a4a7a8;
+
+
+// Breakpoints
+$breakpoints: (xxxlarge: $xxxlarge, xlarge: $xlarge, xsml: $xsmall, small: $small, largeMobile: $largeMobile, medium: $medium, xmedium: $xmedium, large: $large, xxlarge: $xxlarge);

@@ -1,0 +1,38 @@
+.form-group {
+    width: 100%;
+    margin-bottom: 40px;
+
+    &.full {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        border: none;
+        border-bottom: solid 1px $color-black;
+        outline: none;
+        background-color: transparent;
+        font-size: 18px;
+        resize: none;
+
+        &::-webkit-input-placeholder {
+            font-size: 18px;
+            color: $color-black;
+            opacity: 1;
+        }
+
+        &::-ms-input-placeholder {
+            font-size: 18px;
+            color: $color-black;
+            opacity: 1;
+        }
+
+        &::placeholder {
+            font-size: 18px;
+            color: $color-black;
+            opacity: 1;
+        }
+    }
+}

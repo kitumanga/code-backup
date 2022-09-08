@@ -1,0 +1,114 @@
+.generic-content.about-section{
+ padding: 135px 0 40px;
+ @include breakpoint (large){
+    padding: 125px 0 40px;
+ }
+ @include breakpoint (small){
+    padding: 80px 0 40px;
+ }
+    a{
+        color:$color-blue;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    h1,h2,h3,h4,h5,h6{font-weight: 400;}
+    h1 {
+        font-size: 65px;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 55px;
+        }
+        @include  breakpoint (xmedium){
+            font-size: 45px;
+        }
+    }
+    h2{
+        font-size: 48px;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 38px;
+        }
+        @include  breakpoint (large){
+            font-size: 35px;
+        }
+        @include  breakpoint (xmedium){
+            font-size: 30px;
+        }
+    }
+    h3{
+        font-size: 35px;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 30px;
+        }
+        @include  breakpoint (xmedium){
+            font-size: 25px;
+        }
+    }
+    h4{
+        font-size: 30px;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 28px;
+        }
+        @include  breakpoint (xmedium){
+            font-size: 22px;
+        }
+    }
+    h5{
+        font-size: 28px;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 25px;
+        }
+        @include  breakpoint (xmedium){
+            font-size: 18px;
+        }
+    }
+    h6{
+        font-size:20px ;
+        margin: 20px 0;
+        @include breakpoint (xlarge){
+            font-size: 16px;
+        }
+    }
+    .alignleft{
+        float:left;
+        clear:both;
+        margin: 0 15px 15px 0;
+        @include breakpoint (xmedium){
+            margin: 15px auto;
+            float: none;
+            display: block;
+        }
+    }
+    .alignright{
+        float:right;
+        clear:both;
+        margin: 0 0 15px 15px;
+        @include breakpoint (xmedium){
+            margin: 15px auto;
+            float: none;
+            display: block;
+        }
+    }
+    .aligncenter{
+        margin:15px auto;
+        text-align: center;
+        display: block;
+    }
+    ul,ol{
+        padding-left: 15px;
+        margin: 20px 0;
+    }
+    ul{
+        list-style: disc;
+    }
+}
+
+
+// 404 page
+.error-wrap.about-section{
+    text-align: center;
+}

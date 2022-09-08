@@ -1,0 +1,118 @@
+.grey-color{
+    color: $color-gray !important;
+}
+
+.about-section{
+    padding: 150px 0px ;
+    .about-wrapper{
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        margin: 0 50px; 
+        padding: 50px 0 50px;
+        @include breakpoint(small){
+            padding: 20px 0 30px;
+        }
+        @media (max-width: 640px){
+            margin: 0px;
+        }
+        &:last-child{
+            border-bottom:0;
+        }
+        .row-wrap{
+          width: 80%;
+          margin: 0 auto;
+          @media (max-width: 640px){
+            width: 100%;
+        }
+            .about-col{
+                width: 80%;
+                margin: 0 auto;
+                @media (max-width: 640px){
+                    width: 100%;
+                }
+                h4{
+                    letter-spacing: .14em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #333;
+                    font-weight: normal;
+                    margin-bottom: 22px;
+                }
+                p{
+                    margin-bottom: 27px;
+                    text-align: justify;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+                p,a{
+                    color:#5b5252;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.set{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .set > a{
+    display: block;
+    text-decoration: none;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    color:#b5b5b5  !important;
+    font-size: 22px;
+    font-weight: 700;   
+    letter-spacing: .2em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .set > a i{
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 5px;
+  }
+
+  .content{
+    display:none;
+    margin-top: 15px;
+    p{
+        margin-bottom: 25px !important  ;
+    }
+  }
+ 
+
+  .page-template-template-about .site-header,.page-template-template-contact .site-header{
+        background-color: #fff;
+}
+  .page-template-template-about{
+    position: relative;
+    &:after{
+        content: '';
+        background-attachment: fixed;
+        background-image: url('../../app/images/logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        background-size: contain;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    
+}

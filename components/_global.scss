@@ -1,0 +1,193 @@
+.custom-img-box{
+    position: relative;
+    .overlay{
+        background:rgba($color: $color-black, $alpha: 0.3);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.custom-text-box{
+    &.white{
+        h1,h2,h3,h4,h5,h6,p{
+            color: $color-white;
+        }
+    }
+    &.common{
+        max-width: 800px;
+        margin: 0 auto;
+        h5,h3{
+            font-weight: $light;
+            font-family: $font-family-termina;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            span{
+                font-weight: $bold;
+            }
+        }
+       
+        p{
+           padding-top: 20px; 
+        }
+        .btn{
+            margin-top: 40px;
+        }
+    }
+}
+
+// loader
+.loader-white{
+    background: $color-white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+}
+.loader{
+    background: $color-blue;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .circleimg{
+        position: absolute;
+        bottom: -30%;
+        right: -5%;
+        z-index: 2;
+      
+    }
+}
+
+    .circleimg{
+        position: absolute;
+        bottom: -50%;
+        right: -20%;
+        z-index: 2;
+        max-width: 645px;
+        @include breakpoint(laptop){
+            max-width: 450px;
+        }
+        @include breakpoint(small){
+            max-width: 300px;
+        }
+        @include breakpoint(largeMobile){
+            max-width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+.loader-wrap{
+    background-color: $color-blue;
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    &.loader1{
+        z-index: 9998;
+        .circleimg{
+            position: absolute;
+            bottom: -27%;
+            right: -11%;
+            z-index: 2;
+        }
+    }
+    &.loader2{
+        z-index: 9997;
+        .circleimg{
+            position: absolute;
+            top: -50%;
+            right:auto;
+            left:5%;
+        }
+    }
+    &.loader3{
+        z-index: 9996;
+        .circleimg{
+            position: absolute;
+            right:auto;
+            left:4%;
+        }
+    }
+    .middle-img{
+    img{
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        @include breakpoint(small){
+            width: 98%;
+        }
+    }
+    }
+}
+.loader-text{
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    width:80% ; 
+    font-size: 60px;
+   @include center(both);
+
+   @include breakpoint(large){
+        font-size: 45px;
+   }    
+   @include breakpoint(small){
+       font-size: 30px;
+   }
+}
+@media (max-width: 1200px){
+.circleimg {
+    max-width: 280px;
+}
+}
+.overlay-blue{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    background: rgba($color: $color-blue, $alpha: 0.5);
+    width: 100%;
+    z-index: -1;
+}
+
+
+// inner pages
+.overlay-inner{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #146bba 0%, rgba(10, 54, 93, 0) 100%);
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+// counter
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
